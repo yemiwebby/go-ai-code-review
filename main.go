@@ -26,7 +26,7 @@ func Countdown(start int, writer ...io.Writer) {
 
 		fmt.Fprintln(output, start)
 		time.Sleep(time.Second * 1)
-		start--
+		start = start - 1
 	}
 
 }
